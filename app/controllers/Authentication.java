@@ -1,13 +1,27 @@
 package controllers;
 
+import play.data.Form;
 import play.mvc.*;
+import views.html.authentication.*;
+
+
 
 public class Authentication extends Controller {
+
+	 public static class Login {
+	         public String username;
+	         public String password;
+	 }
+
+	 public static Form<Login> loginForm = Form.form(Login.class);
+
     public static Result index() {
-        return TODO;
+    	return ok(index.render(loginForm));
     }
 
     public static Result authenticate() {
-        return TODO;
+    	Login login = loginForm.bindFromRequest().get();
+        return ok("ログインしたユーザは " + login.username + " です");
+
     }
 }
