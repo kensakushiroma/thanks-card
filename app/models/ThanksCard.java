@@ -10,8 +10,8 @@ public class ThanksCard extends Model {
 	@Id
 	public Integer ThanksCard_ID;
 	public Integer CardMaker_ID;
-	public date Transmission_date;
-	public date Help_date;
+	public java.sql.Date Transmission_date;
+	public java.sql.Date Help_date;
 	public Integer Helpcategory_ID;
 	public String Help;
 	public String Thanks;
