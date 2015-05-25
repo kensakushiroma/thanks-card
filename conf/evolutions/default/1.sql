@@ -3,8 +3,12 @@
 
 # --- !Ups
 
-create table member)
+create table member (
+  member_id                 integer not null,
+  constraint pk_member primary key (member_id))
 ;
+
+create sequence member_seq;
 
 
 
@@ -16,4 +20,6 @@ SET REFERENTIAL_INTEGRITY FALSE;
 drop table if exists member;
 
 SET REFERENTIAL_INTEGRITY TRUE;
+
+drop sequence if exists member_seq;
 
