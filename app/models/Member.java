@@ -8,13 +8,9 @@ import javax.persistence.Id;
 public class Member extends Model {
 	@Id
 	public Integer Member_ID;
-
 	public Integer Post_ID;
-
 	public String Member_name;
-
-	public String Logint_password;
-
+	public String(8) Logint_password;
 	public Integer Authority_ID;
 
 }
