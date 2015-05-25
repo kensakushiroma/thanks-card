@@ -10,7 +10,7 @@ public class Member extends Model {
 	public Integer Member_ID;
 	public Integer Post_ID;
 	public String Member_name;
-	public String Logint_password;
+	public String Login_password;
 	public Integer Authority_ID;
 
 }
