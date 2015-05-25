@@ -19,7 +19,7 @@ create table member (
   member_id                 integer not null,
   post_id                   integer,
   member_name               varchar(255),
-  logint_password           varchar(255),
+  login_password            varchar(255),
   authority_id              integer,
   constraint pk_member primary key (member_id))
 ;
