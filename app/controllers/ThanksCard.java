@@ -2,7 +2,7 @@ package controllers;
 
 import play.data.Form;
 import play.mvc.*;
-import views.html.authentication.*;
+import views.html.thankscard.*;
 
 
 
