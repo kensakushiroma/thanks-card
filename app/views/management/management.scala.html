@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>感謝カード入力画面</title>
+           </head>
+    <body>
+<input type="submit" value="ログアウト" style="background-color:blue;">
+<input type="submit" value="パスワード登録" style="background-color:blue;">
+ <p>■集計対象者</p>
+ <p>■感謝された人</p>
+ <!-- プルタブ -->
+ <form>
+ 部署：<select name="部署：">
+ <option value="1">ネットワーク技術部</option>
+ <option value="2" selected>人事部</option>
+ <option value="3">システム開発部</option>
+ </select>
+ </form>
+
+
+<form>
+ 氏名：<select name="氏名：">
+ <option value="1">濱元　和樹</option>
+ <option value="2" selected>兼元　唯之</option>
+ <option value="3">城間　健作</option>
+ <option value="4">喜久川　聖弥</option>
+ </select>
+ </form>
+
+
+ ヘルプ項目：<form>
+ <select name="ヘルプ項目：">
+ <option value="1">技術に関すること</option>
+ <option value="2" selected>知識に関すること</option>
+ <option value="3">その他</option>
+ </select>
+ </form>
+
+ <input type="submit" value="検索" style="background-color:blue;">
+
+
+<p>■集計結果</p>
+
+<!-- 掲示板html -->
+
+<table border="2">
+  <tr>
+    <th rowspan="2">日付</th>
+    <th colspan="2">感謝された人</th>
+    <th rowspan="2">ヘルプ項目</th>
+    <th rowspan="2">ヘルプ内容</th>
+    <th rowspan="2">感謝の言葉</th>
+    <th colspan="2">感謝する人</th>
+    <th rowspan="2">ポイント</th>
+    <th rowspan="2">全体を表示</th>
+  </tr>
+  <tr>
+    <th>部署</th>
+    <th>名前</th>
+    <th>部署</th>
+    <th>名前</th>
+ </tr>
+ <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><input type="button" value="詳細"></td>
+ </tr>
+
+<input type="submit" value="マイページ" style="position: absolute; right: 20px; bottom: 20px; background-color:blue;" />
+    </body>
+</html>
