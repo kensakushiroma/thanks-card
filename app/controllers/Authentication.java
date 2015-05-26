@@ -1,6 +1,7 @@
 package controllers;
 
 import play.data.Form;
+import views.html.thankscard.*;
 import play.mvc.*;
 import views.html.authentication.*;
 
@@ -46,7 +47,9 @@ public class Authentication extends Controller {
         } else {
             Login login = form.get();
             session("login", login.username);
-            return ok("ようこそ " + login.username + " さん!!");
+         // return ok("ようこそ " + login.username + " さん!!");
+            return ok(thankscard.render());
+
         }
 
     }
